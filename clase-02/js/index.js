@@ -54,3 +54,37 @@ if (esMayor5) {
 else {
     alert("te dije mayor a 5 la puta que te pario");
 }
+
+// y && - no es igual, es distinto != - \n salto de linea
+
+let nombreIngresado = prompt("Ingresar Nombre");
+let apellidoIngresado = prompt("Ingresar apellido");
+
+if ((nombreIngresado != "") && (apellidoIngresado != "")) {
+    alert("Tu nombre es " + nombreIngresado + " " + apellidoIngresado + "\nNombre: "
+    + nombreIngresado + "\nApellido: " + apellidoIngresado);
+}
+else {
+    alert("Te dije que pongas el nombre y apellido la puta que te remil re pario");
+}
+
+// or, o ||
+
+let nombrePuta = prompt("Pone el nombre de una puta");
+
+if ((nombrePuta == "Cuede") || (nombrePuta == "Rodrigo")) {
+    alert("Dios no es una puta");
+}
+else {
+    alert("Efectivamente es una puta");
+}
+
+// Combinacion de && y ||
+
+if (((nombreIngresado != "") && (apellidoIngresado != "")) && ((nombreIngresado == "Rodrigo") || (nombreIngresado == "Cuede"))) {
+    alert("Hola dios " + nombreIngresado);
+}
+else {
+    alert("You´re not god")
+}
+

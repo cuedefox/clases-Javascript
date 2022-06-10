@@ -44,3 +44,4 @@ if (edad >= 18) {
 else {
     alert("Sos menor de edad")
 }
+
