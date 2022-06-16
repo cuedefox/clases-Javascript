@@ -85,6 +85,6 @@ if (((nombreIngresado != "") && (apellidoIngresado != "")) && ((nombreIngresado 
     alert("Hola dios " + nombreIngresado);
 }
 else {
-    alert("You´re not god")
+    alert("You´re not god");
 }
 
