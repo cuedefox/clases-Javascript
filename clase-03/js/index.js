@@ -43,3 +43,22 @@ switch(valor) {
         console.log("Valor desconocido");
         break;
 }
+// Tambien el switch sirve para simplificar algunos if else ej:
+
+let seleccionComida = parseInt(prompt("Seleccione su menu ingresando el numero\n1.Anvorgueza\n2.Milagruesa\n3.Poronga en lata\n4.Pija"));
+switch(seleccionComida) {
+    case 1:
+        alert("elejiste comerte una rica anvorgueza");
+        break;
+    case 2:
+        alert("Te vas a comer una milagrosa bien grosa");
+        break;
+    case 3:
+        alert("AHHH sos un putazo de mierda come porongas en lata");
+        break;
+    case 4:
+        alert("AHHH sos un putazo de mierda come pijas");
+        break;
+    default:
+        alert("Ahora te quedas sin comer por chupa pija");
+}
