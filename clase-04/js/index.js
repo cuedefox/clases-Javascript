@@ -32,4 +32,10 @@ numero2 = parseFloat(prompt("Ingrese el segundo numero"));
 sumar(numero1, numero2);
 mensaje(total);
  
-// 
+// el return devuelve lo que se le ordene, ejemplo sustituyendo lo anterior
+function suma(numero1, numero2) {
+    return numero1 + numero2;
+}
+
+let resultado = suma(7,4);
+alert(resultado);
