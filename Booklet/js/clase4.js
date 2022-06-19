@@ -36,23 +36,20 @@ for (i = 1; i <= 5; i++) {
 }
 
 // Actividad 4
-function cotizarDolar(pesos) {
-    return pesos / 200;
-}
-function cotizarPeso(dolar) {
-    return dolar * 200;
-}
+const DOLAR = 200;
+const cotizarDolar = pesos => pesos / DOLAR;
+const cotizarPeso = dolar => dolar * DOLAR;
 
 let tipoCotizar = parseInt(prompt("Bienvenido al cotizador\nSi quiere cambiar pesos por dolares presione 1 si quiere cambiar dolares por pesos presione 2"));
-
-if (tipoCotizar == 1) {
-    let pesos = parseFloat(prompt("¿Cuantos pesos ingresara?"));
-    alert(`El total es de ${cotizarDolar(pesos)} dolares`);
-}else if (tipoCotizar == 2){
-    let dolares = parseFloat(prompt("¿Cuantos dolares ingresara?"));
-    alert(`El total es de ${cotizarPeso(dolares)} pesos`);
-}else {
-    alert("Error")
+switch (tipoCotizar) {
+    case 1:
+        let pesos = parseFloat(prompt("¿Cuantos pesos ingresara?"));
+        alert(`El total es de ${cotizarDolar(pesos)} dolares`);
+    case 2:
+        let dolares = parseFloat(prompt("¿Cuantos dolares ingresara?"));
+        alert(`El total es de ${cotizarPeso(dolares)} pesos`);
+    default:
+        alert("Error")
 }
 
 // Actividad 5
